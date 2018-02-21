@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GreenPortfolio</title>
+  </head>
+  <!--Meta Prerequisites + viewport. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Know basic syntax? Want to take your theoretical knowledge to a whole new practical layer? codeCertain takes you there.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Stylesheets -->
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css">
+  <body> 
+    <div id="fullpage">
+      <!--Landing Section including menu. -->
+      <div class="landingSection section active" id="landinganchor">
+        <!--Header Section including logo and navigation menu.-->
+        <div class="header">
+          <!--Floated logo with left-induced margin.-->
+          <div class="logo"></div>
+          <!--Floated menu with right-induced margin. -->
+          <div class="menu">
+            <ul> 
+              <li> <a class="highlight" href="#contactanchor">Contact</a></li>
+              <li> <a class="inactive" href="">Blog</a></li>
+              <li> <a href="#workanchor">Works</a></li>
+              <li> <a href="#servicesanchor">Services</a></li>
+              <li> <a href="#landinganchor">Home</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="landingMain">   
+          <div class="leftLandingSection">
+            <h1>Building blocks of tomorrow, with the technologies of today.</h1>
+            <p>
+               It's impossible to predict how the world will <span class="underline">change  </span>in the years to come. It's impossible to predict how technology will <span class="underline">adapt </span>for our future generations. It's impossible to <span class="underline">predict </span>the impacts of our actions today. But it is certainley not impossible to be ready for the future, whenever it comes.</p>
+            <button class="readMore" onclick="window.location.href='#servicesanchor'"> <i class="fa fa-plus-circle pushAside"></i>Read More</button><a class="orNot" href="#contactanchor">Or, get in touch.</a>
+          </div>
+          <div class="rightLandingSection"><img src="images/headerImage.png"></div>
+          <div class="fixedLanding"><a href="#servicesanchor"><i class="fa fa fa-angle-down goDown"></i></a></div>
+        </div>
+      </div>
+      <!--About Section including services offered.-->
+      <div class="servicesSection section" id="servicesanchor">
+        <div class="centerServices">
+          <div class="centerHeaderText">
+            <h1>
+               Work towards <span class="highlightColor">future technologies</span>.</h1>
+            <p>Every agency on the block aknowledges the need for understanding the end consumer. Not every agency can guarantee this, while also using future-proof development stacks.</p>
+          </div>
+        </div>
+        <div class="highlightCenter">
+          <div class="highlightFocus"><img src="images/iconOne.png" style="padding-bottom: 5px;">
+            <h4>Web Development</h4>
+            <div class="highlightCard">
+              <div class="spotlightText topText">
+                <div class="iconSection"><i class="devicon-html5-plain"></i></div>
+                <div class="leftText"> 
+                  <p>Dynamic Frontend</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle activeIcon"></i></div>
+              </div>
+              <div class="spotlightText">
+                <div class="iconSection"><i class="devicon-sass-original"></i></div>
+                <div class="leftText"> 
+                  <p>Compiled Frontend</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle activeIcon"></i></div>
+              </div>
+              <div class="spotlightText">
+                <div class="iconSection"><i class="devicon-nodejs-plain"></i></div>
+                <div class="leftText"> 
+                  <p>Javascript Frameworks</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle activeIcon"></i></div>
+              </div>
+              <div class="spotlightText activeIcon">
+                <div class="iconSection"><i class="devicon-rails-plain"></i></div>
+                <div class="leftText"> 
+                  <p>Rails-backed Solutions</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle activeIcon"></i></div>
+              </div>
+              <div class="spotlightText bottomText">
+                <div class="iconSection"><i class="devicon-laravel-plain"></i></div>
+                <div class="leftText"> 
+                  <p>Laravel-backed Solutions</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="highlightFocus"><img src="images/iconTwo.png">
+            <h4>Mobile Development</h4>
+            <div class="highlightCard">
+              <div class="spotlightText topText">
+                <div class="iconSection"><i class="devicon-react-original"></i></div>
+                <div class="leftText"> 
+                  <p>React Native</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle activeIcon"></i></div>
+              </div>
+              <div class="spotlightText">
+                <div class="iconSection"><i class="devicon-sass-original"></i></div>
+                <div class="leftText"> 
+                  <p>Fuse Uno</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle activeIcon"></i></div>
+              </div>
+              <div class="spotlightText">
+                <div class="iconSection"><i class="devicon-angularjs-plain"></i></div>
+                <div class="leftText"> 
+                  <p>NativeScript</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle activeIcon"></i></div>
+              </div>
+              <div class="spotlightText">
+                <div class="iconSection"><i class="devicon-java-plain"></i></div>
+                <div class="leftText"> 
+                  <p>Java (Android)</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle"></i></div>
+              </div>
+              <div class="spotlightText bottomText">
+                <div class="iconSection"><i class="devicon-c-plain"></i></div>
+                <div class="leftText"> 
+                  <p>Objective-C/Swift (iOS)</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="highlightFocus"><img src="images/iconThree.png" style="padding-bottom: -11px; margin-top: 15px; padding-left: 7px;">
+            <h4>Interaction Development</h4>
+            <div class="highlightCard">
+              <div class="spotlightText topText">
+                <div class="iconSection"><i class="devicon-photoshop-plain"></i></div>
+                <div class="leftText"> 
+                  <p>PS/AI Wireframing</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle activeIcon"></i></div>
+              </div>
+              <div class="spotlightText">
+                <div class="iconSection"><i class="fa fa-diamond"></i></div>
+                <div class="leftText"> 
+                  <p>Sketch Mockups</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle activeIcon"></i></div>
+              </div>
+              <div class="spotlightText">
+                <div class="iconSection"><i class="fa devicon-javascript-plain"></i></div>
+                <div class="leftText"> 
+                  <p>JavaScript Animation</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle activeIcon"></i></div>
+              </div>
+              <div class="spotlightText">
+                <div class="iconSection"><i class="fa fa-angle-double-right"></i></div>
+                <div class="leftText"> 
+                  <p>InDesign Animation</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle"></i></div>
+              </div>
+              <div class="spotlightText bottomText">
+                <div class="iconSection"><i class="fa fa-edit"></i></div>
+                <div class="leftText"> 
+                  <p>After Effects Animation</p>
+                </div>
+                <div class="rightText"><i class="fa fa-circle"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p style="text-align: center; padding-top: 10px;"><i class="fa fa-circle activeIcon" style="padding-right: 10px;"></i>Available<i class="fa fa-circle" style="padding-right: 10px; padding-left: 10px;"></i>Available Soon</p>
+      </div>
+      <!--Past Work Section including examples of work completed in the past.-->
+      <div class="pastWorkSection section" id="workanchor">
+        <div class="leftWork">
+          <h1>
+             Show real skills, set <span class="highlightColor">real expectations</span>. </h1>
+          <p>
+             How do you determine the skillset of a developer you hire? Do you test them, stress them, or quest them?</p>
+          <p>
+             For our clients, we like to impress them. Why hire developers that can't show their real world skill. Because at the end of the day, <i>spaghetti </i>code written today, will be <i>spaghetti </i>code written tomorrow. </p>
+          <p>Take a look at some of the partners that we work with, or some open-sourced projects we've built on the side (so that you can have a feel for our style).</p><a href="https://www.docker.com/partners/partner-program"><img class="bitbigger WorkOne" src="images/docker_dark.svg"></a><a href="https://www.namecheap.com/affiliates.aspx"><img class="bitbigger WorkTwo" src="images/namecheap_dark.svg"></a><a href="https://www.shopify.ca/partners"><img class="bitsmaller WorkThree" src="images/shopify_dark.svg"></a><a href="https://refer.wordpress.com/"><img class="WorkFour" src="images/wordpress_dark.svg"></a>
+          <button class="readMore"> <i class="fa fa-github pushAside"></i>Take a look</button>
+        </div>
+        <div class="rightWork"></div>
+      </div>
+      <!--Contact Section with additional methods of contact.-->
+      <div class="contactSection section" id="contactanchor">
+        <h1>
+           Ready to <span class="highlightColor">get started</span>?</h1>
+        <p>
+           Let's get in touch and discuss how we can help your dreams take flight. Due to Non-Discloure and Non-Compete agreements, we request not providing industry specific details.</p>
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+          <form method="POST" accept-charset="UTF-8" action="https://usebasin.com/f/3dcc6425f866"></form>
+          <div class="form-group">
+            <input class="form-control" id="name" type="text" placeholder="What should we call you?" name="name">
+          </div>
+          <div class="form-group">
+            <input class="form-control" id="email" type="email" placeholder="Where can we reach you?" name="email">
+          </div>
+          <div class="form-group">
+            <textarea class="formcontrol" id="text" name="textarea" placeholder="Tell us a bit about your needs." cols="88" rows="15"></textarea>
+          </div>
+          <button class="readMore" id="contact" type="submit">Surprise me!</button>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js"></script>
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>

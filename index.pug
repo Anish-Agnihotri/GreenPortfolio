@@ -1,0 +1,245 @@
+doctype html
+html
+    head
+        title GreenPortfolio
+
+    //Meta Prerequisites + viewport. 
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='Know basic syntax? Want to take your theoretical knowledge to a whole new practical layer? codeCertain takes you there.')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    //Stylesheets 
+    link(href='css/index.css', rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet')
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+    link(href='https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css')
+
+    body 
+        #fullpage
+            //Landing Section including menu. 
+            .landingSection.section.active#landinganchor
+                //Header Section including logo and navigation menu.
+                .header
+                    //Floated logo with left-induced margin.
+                    .logo
+                    //Floated menu with right-induced margin. 
+                    .menu
+                        ul 
+                            li 
+                                a.highlight(href="#contactanchor") Contact
+                            li 
+                                a.inactive(href="") Blog
+                            li 
+                                a(href="#workanchor") Works
+                            li 
+                                a(href="#servicesanchor") Services
+                            li 
+                                a(href="#landinganchor") Home
+                .landingMain    
+                    .leftLandingSection
+                        h1 Building blocks of tomorrow, with the technologies of today.
+                        p 
+                            | It's impossible to predict how the world will 
+                            span.underline change  
+                            |in the years to come. It's impossible to predict how technology will 
+                            span.underline adapt 
+                            | for our future generations. It's impossible to 
+                            span.underline predict 
+                            | the impacts of our actions today. But it is certainley not impossible to be ready for the future, whenever it comes.
+                        button.readMore(onclick="window.location.href='#servicesanchor'") 
+                            i.fa.fa-plus-circle.pushAside
+                            |Read More
+                        a.orNot(href='#contactanchor') Or, get in touch.
+                    .rightLandingSection
+                        img(src='images/headerImage.png')
+                    .fixedLanding
+                        a(href='#servicesanchor')
+                            i.fa.fa.fa-angle-down.goDown
+
+            //About Section including services offered.
+            .servicesSection.section#servicesanchor
+                .centerServices
+                    .centerHeaderText
+                        h1 
+                            | Work towards 
+                            span.highlightColor future technologies
+                            |.
+                        p Every agency on the block aknowledges the need for understanding the end consumer. Not every agency can guarantee this, while also using future-proof development stacks.
+                .highlightCenter
+                    .highlightFocus
+                        img(src='images/iconOne.png', style='padding-bottom: 5px;')
+                        h4 Web Development
+                        .highlightCard
+                            .spotlightText.topText
+                                .iconSection
+                                    i.devicon-html5-plain
+                                .leftText 
+                                    p Dynamic Frontend
+                                .rightText
+                                    i.fa.fa-circle.activeIcon
+                            .spotlightText
+                                .iconSection
+                                    i.devicon-sass-original
+                                .leftText 
+                                    p Compiled Frontend
+                                .rightText
+                                    i.fa.fa-circle.activeIcon
+                            .spotlightText
+                                .iconSection
+                                    i.devicon-nodejs-plain
+                                .leftText 
+                                    p Javascript Frameworks
+                                .rightText
+                                    i.fa.fa-circle.activeIcon
+                            .spotlightText.activeIcon
+                                .iconSection
+                                    i.devicon-rails-plain
+                                .leftText 
+                                    p Rails-backed Solutions
+                                .rightText
+                                    i.fa.fa-circle.activeIcon
+                            .spotlightText.bottomText
+                                .iconSection
+                                    i.devicon-laravel-plain
+                                .leftText 
+                                    p Laravel-backed Solutions
+                                .rightText
+                                    i.fa.fa-circle
+                    .highlightFocus
+                        img(src='images/iconTwo.png')
+                        h4 Mobile Development
+                        .highlightCard
+                            .spotlightText.topText
+                                .iconSection
+                                    i.devicon-react-original
+                                .leftText 
+                                    p React Native
+                                .rightText
+                                    i.fa.fa-circle.activeIcon
+                            .spotlightText
+                                .iconSection
+                                    i.devicon-sass-original
+                                .leftText 
+                                    p Fuse Uno
+                                .rightText
+                                    i.fa.fa-circle.activeIcon
+                            .spotlightText
+                                .iconSection
+                                    i.devicon-angularjs-plain
+                                .leftText 
+                                    p NativeScript
+                                .rightText
+                                    i.fa.fa-circle.activeIcon
+                            .spotlightText
+                                .iconSection
+                                    i.devicon-java-plain
+                                .leftText 
+                                    p Java (Android)
+                                .rightText
+                                    i.fa.fa-circle
+                            .spotlightText.bottomText
+                                .iconSection
+                                    i.devicon-c-plain
+                                .leftText 
+                                    p Objective-C/Swift (iOS)
+                                .rightText
+                                    i.fa.fa-circle
+                    .highlightFocus
+                        img(src='images/iconThree.png', style='padding-bottom: -11px; margin-top: 15px; padding-left: 7px;')
+                        h4 Interaction Development
+                        .highlightCard
+                            .spotlightText.topText
+                                .iconSection
+                                    i.devicon-photoshop-plain
+                                .leftText 
+                                    p PS/AI Wireframing
+                                .rightText
+                                    i.fa.fa-circle.activeIcon
+                            .spotlightText
+                                .iconSection
+                                    i.fa.fa-diamond
+                                .leftText 
+                                    p Sketch Mockups
+                                .rightText
+                                    i.fa.fa-circle.activeIcon
+                            .spotlightText
+                                .iconSection
+                                    i.fa.devicon-javascript-plain
+                                .leftText 
+                                    p JavaScript Animation
+                                .rightText
+                                    i.fa.fa-circle.activeIcon
+                            .spotlightText
+                                .iconSection
+                                    i.fa.fa-angle-double-right
+                                .leftText 
+                                    p InDesign Animation
+                                .rightText
+                                    i.fa.fa-circle
+                            .spotlightText.bottomText
+                                .iconSection
+                                    i.fa.fa-edit
+                                .leftText 
+                                    p After Effects Animation
+                                .rightText
+                                    i.fa.fa-circle
+                p(style='text-align: center; padding-top: 10px;')
+                    |
+                    i.fa.fa-circle.activeIcon(style='padding-right: 10px;')
+                    | Available
+                    i.fa.fa-circle(style='padding-right: 10px; padding-left: 10px;')
+                    | Available Soon
+
+
+            //Past Work Section including examples of work completed in the past.
+            .pastWorkSection.section#workanchor
+                .leftWork
+                    h1 
+                        | Show real skills, set 
+                        span.highlightColor real expectations
+                        |. 
+                    p 
+                        | How do you determine the skillset of a developer you hire? Do you test them, stress them, or quest them?
+                    p 
+                        | For our clients, we like to impress them. Why hire developers that can't show their real world skill. Because at the end of the day, 
+                        i spaghetti 
+                        | code written today, will be 
+                        i spaghetti 
+                        | code written tomorrow. 
+                    p Take a look at some of the partners that we work with, or some open-sourced projects we've built on the side (so that you can have a feel for our style).
+                    a(href='https://www.docker.com/partners/partner-program')
+                        img.bitbigger.WorkOne(src='images/docker_dark.svg')
+                    a(href='https://www.namecheap.com/affiliates.aspx')
+                        img.bitbigger.WorkTwo(src='images/namecheap_dark.svg')
+                    a(href='https://www.shopify.ca/partners')
+                        img.bitsmaller.WorkThree(src='images/shopify_dark.svg')
+                    a(href='https://refer.wordpress.com/')
+                        img.WorkFour(src='images/wordpress_dark.svg')
+                    button.readMore 
+                        i.fa.fa-github.pushAside
+                        | Take a look
+                .rightWork
+            
+            //Contact Section with additional methods of contact.
+            .contactSection.section#contactanchor
+                h1 
+                    | Ready to 
+                    span.highlightColor get started
+                    |?
+                p 
+                    |Let's get in touch and discuss how we can help your dreams take flight. Due to Non-Discloure and Non-Compete agreements, we request not providing industry specific details.
+                .col-lg-6.col-lg-offset-3.col-md-6.col-sm-6.col-md-offset-3.col-sm-offset-3
+                    form(method='POST' accept-charset="UTF-8" action='https://usebasin.com/f/3dcc6425f866')
+                    div.form-group
+                        input#name.form-control(type='text', placeholder='What should we call you?' name='name')
+                    div.form-group
+                        input#email.form-control(type='email', placeholder='Where can we reach you?' name='email')
+                    div.form-group
+                        textarea#text.formcontrol(name="textarea", placeholder='Tell us a bit about your needs.', cols='88', rows='15')
+                    button.readMore#contact(type='submit') Surprise me!
+
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js')
+            script(src='js/script.js')

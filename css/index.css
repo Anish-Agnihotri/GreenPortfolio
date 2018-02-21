@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif !important;
+  overflow-x: hidden; }
+
+.landingSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: #141415; }
+  .landingSection .header {
+    padding-top: 15px;
+    height: 100px; }
+    .landingSection .header .logo {
+      width: 20vw;
+      height: 70px;
+      float: left;
+      margin-left: 5vw;
+      background-color: #cccccc; }
+    .landingSection .header .menu {
+      width: 60vw;
+      height: 70px;
+      float: right;
+      margin-right: 5vw; }
+      .landingSection .header .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; }
+        .landingSection .header .menu ul li {
+          float: right; }
+          .landingSection .header .menu ul li a {
+            display: block;
+            color: #fefefe;
+            text-align: center;
+            margin: 25px 16px;
+            text-decoration: none; }
+          .landingSection .header .menu ul li a:hover {
+            border-bottom: 2px solid #fefefe;
+            padding: 0px; }
+        .landingSection .header .menu ul .highlight {
+          color: #32d079 !important;
+          border-bottom: 2px solid #32d079; }
+        .landingSection .header .menu ul .highlight:hover {
+          border-bottom: 2px solid #32d079 !important;
+          color: #59d993; }
+        .landingSection .header .menu ul .inactive {
+          color: #666666;
+          pointer-events: none; }
+        .landingSection .header .menu ul .inactive:hover {
+          border-bottom: none !important; }
+  .landingSection .landingMain {
+    width: 100vw;
+    height: calc(100vh - 100px);
+    float: left; }
+    .landingSection .landingMain .leftLandingSection {
+      width: 50vw;
+      height: calc(100vh - 160px);
+      padding-left: 5vw;
+      float: left;
+      padding-top: 18vh;
+      padding-bottom: 6vh; }
+      .landingSection .landingMain .leftLandingSection h1 {
+        font-weight: bold;
+        color: #fefefe; }
+      .landingSection .landingMain .leftLandingSection p {
+        color: #a4a4a4; }
+        .landingSection .landingMain .leftLandingSection p .underline {
+          border-bottom: 1.25px solid #32d079; }
+      .landingSection .landingMain .leftLandingSection .orNot {
+        color: #fefefe;
+        padding-left: 15px; }
+      .landingSection .landingMain .leftLandingSection .orNot:hover {
+        text-decoration: none; }
+    .landingSection .landingMain .rightLandingSection {
+      width: 50vw;
+      margin-left: -6vw;
+      height: calc(100vh - 160px);
+      float: left;
+      margin-top: -3vh;
+      padding-top: 10vh;
+      padding-bottom: 6vh; }
+      .landingSection .landingMain .rightLandingSection img {
+        height: 140%;
+        width: auto; }
+    .landingSection .landingMain .fixedLanding {
+      text-align: center;
+      margin-top: calc(100vh - 160px); }
+      .landingSection .landingMain .fixedLanding a .goDown {
+        color: #32d079;
+        font-size: 50px; }
+
+.servicesSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: #141415; }
+  .servicesSection .centerServices {
+    width: 100%;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    text-align: center;
+    padding-top: 4vh; }
+    .servicesSection .centerServices .centerHeaderText {
+      padding-left: 20vw;
+      padding-right: 20vw; }
+      .servicesSection .centerServices .centerHeaderText h1 {
+        color: #fefefe; }
+      .servicesSection .centerServices .centerHeaderText p {
+        color: #a4a4a4; }
+  .servicesSection .highlightCenter {
+    text-align: center;
+    padding-top: 4vh; }
+    .servicesSection .highlightCenter .highlightFocus {
+      width: 300px;
+      height: 100%;
+      margin-right: 1vh;
+      margin-left: 1vh;
+      display: inline-block; }
+      .servicesSection .highlightCenter .highlightFocus h4 {
+        color: #fefefe; }
+      .servicesSection .highlightCenter .highlightFocus .highlightCard {
+        width: 300px;
+        height: 275px;
+        border-radius: 5px;
+        background-color: #252527;
+        box-shadow: 1px solid #ffffff;
+        -webkit-box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 36px -1px rgba(0, 0, 0, 0.5); }
+        .servicesSection .highlightCenter .highlightFocus .highlightCard .spotlightText {
+          height: 55px;
+          width: 100%;
+          border-bottom: 1px solid #323234; }
+          .servicesSection .highlightCenter .highlightFocus .highlightCard .spotlightText .iconSection {
+            height: 100%;
+            width: 15%;
+            float: left;
+            padding-top: 15px; }
+            .servicesSection .highlightCenter .highlightFocus .highlightCard .spotlightText .iconSection i {
+              font-size: 25px;
+              color: #fefefe; }
+          .servicesSection .highlightCenter .highlightFocus .highlightCard .spotlightText .leftText {
+            height: 100%;
+            width: 75%;
+            float: left;
+            padding-left: calc(10% + 20px);
+            text-align: left; }
+            .servicesSection .highlightCenter .highlightFocus .highlightCard .spotlightText .leftText p {
+              color: #a4a4a4;
+              font-size: 15px;
+              margin-top: 19px;
+              margin-left: -50px; }
+          .servicesSection .highlightCenter .highlightFocus .highlightCard .spotlightText .rightText {
+            height: 100%;
+            width: 10%;
+            float: left;
+            text-align: right;
+            font-size: 18px;
+            padding-right: 20px;
+            padding-top: 18px; }
+        .servicesSection .highlightCenter .highlightFocus .highlightCard .topText {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px; }
+        .servicesSection .highlightCenter .highlightFocus .highlightCard .bottomText {
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border: none !important; }
+
+.pastWorkSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: #141415; }
+  .pastWorkSection .leftWork {
+    width: 40vw;
+    padding-left: 5vw;
+    padding-right: 3vw;
+    height: 100vh;
+    padding-top: 12vh;
+    background-color: #141415;
+    float: left; }
+    .pastWorkSection .leftWork h1 {
+      color: #fefefe; }
+    .pastWorkSection .leftWork p {
+      color: #a4a4a4; }
+    .pastWorkSection .leftWork a img {
+      width: 20%;
+      margin-left: 1%;
+      margin-right: 1%; }
+    .pastWorkSection .leftWork a .bitbigger {
+      width: 25%; }
+    .pastWorkSection .leftWork a .bitsmaller {
+      width: 17%; }
+  .pastWorkSection .rightWork {
+    width: 60vw;
+    padding-left: 5vw;
+    height: 100vh;
+    background-color: #cccccc;
+    float: left;
+    background-image: url(https://i.imgur.com/8xZHgRZ.png); }
+
+.contactSection {
+  height: 100vh;
+  width: 100vw;
+  background-color: #141415;
+  text-align: center;
+  padding-top: 5vh; }
+  .contactSection h1 {
+    color: #fefefe; }
+  .contactSection p {
+    color: #a4a4a4;
+    padding-left: 25vw;
+    padding-right: 25vw; }
+
+.fixedLanding {
+  text-align: center;
+  margin-top: -15px; }
+  .fixedLanding .goDown {
+    color: #32d079;
+    font-size: 50px; }
+
+.activeIcon {
+  color: #32d079; }
+
+.highlightColor {
+  color: #32d079; }
+
+.readMore {
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  background-color: #141415;
+  color: #32d079;
+  border: 2px solid #32d079;
+  margin-top: 20px; }
+  .readMore .pushAside {
+    margin-right: 5px; }
+
+.readMore:hover {
+  background-color: #32d079;
+  color: #141415;
+  transition: all .3s ease; }
+
+#name {
+  height: 50px;
+  border: none;
+  background-color: #252527;
+  color: #ffffff;
+  border-radius: 5px; }
+
+#name:focus {
+  border: 2px solid #32d079; }
+
+#email {
+  height: 50px;
+  border: none;
+  background-color: #252527;
+  color: #ffffff;
+  border-radius: 5px; }
+
+#email:focus {
+  border: 2px solid #32d079; }
+
+#text {
+  border-radius: 5px;
+  border: none;
+  background-color: #252527;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px; }
+
+#text:focus {
+  border: 2px solid #32d079;
+  outline: none !important; }
+
+#contact {
+  margin-top: -5vh; }
