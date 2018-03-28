@@ -1,6 +1,7 @@
 doctype html
 html
     head
+        //Website Title
         title GreenPortfolio
 
     //Meta Prerequisites + viewport. 
@@ -17,6 +18,7 @@ html
     link(href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css')
 
     body 
+        //Fullpage tag to signify that this is a section holder (for slideshow scroll animations).
         #fullpage
             //Landing Section including menu. 
             .landingSection.section.active#landinganchor
@@ -38,6 +40,7 @@ html
                             li 
                                 a(href="#landinganchor") Home
                 .landingMain    
+                    //Left-floated landing section. 
                     .leftLandingSection
                         h1 Building blocks of tomorrow, with the technologies of today.
                         p 
@@ -52,6 +55,7 @@ html
                             i.fa.fa-plus-circle.pushAside
                             |Read More
                         a.orNot(href='#contactanchor') Or, get in touch.
+                    //Right-floated image section to suppoert left landing section. 
                     .rightLandingSection
                         img(src='images/headerImage.png')
                     .fixedLanding
@@ -67,10 +71,12 @@ html
                             span.highlightColor future technologies
                             |.
                         p Every agency on the block aknowledges the need for understanding the end consumer. Not every agency can guarantee this, while also using future-proof development stacks.
+                //Subsection center div to horizontally center the highlight cards. 
                 .highlightCenter
                     .highlightFocus
                         img(src='images/iconOne.png', style='padding-bottom: 5px;')
                         h4 Web Development
+                        //First highlight card. 
                         .highlightCard
                             .spotlightText.topText
                                 .iconSection
@@ -110,6 +116,7 @@ html
                     .highlightFocus
                         img(src='images/iconTwo.png')
                         h4 Mobile Development
+                        //Second highlight card. 
                         .highlightCard
                             .spotlightText.topText
                                 .iconSection
@@ -149,6 +156,7 @@ html
                     .highlightFocus
                         img(src='images/iconThree.png', style='padding-bottom: -11px; margin-top: 15px; padding-left: 7px;')
                         h4 Interaction Development
+                        //Third highlight card.
                         .highlightCard
                             .spotlightText.topText
                                 .iconSection
@@ -240,6 +248,7 @@ html
                         textarea#text.formcontrol(name="textarea", placeholder='Tell us a bit about your needs.', cols='88', rows='15')
                     button.readMore#contact(type='submit') Surprise me!
 
+            //Include scripts (loaded post HTML/CSS output).
             script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
             script(src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js')
             script(src='js/script.js')
